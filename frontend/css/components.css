@@ -1,18 +1,29 @@
 /* cabecera */
 .titulo-pricipal {
-    background: var(--color-secundario-suave);
+    background: var(--color-secundario-fuerte);
 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center ;
     align-items: center;
+
+    border-radius: 50px 0 0;
+}
+
+.titulo-pricipal:hover {
+    opacity: 1.0;
+    cursor: pointer;
 }
 
 .contacto {
     /* background: var(--color-secundario-suave); */
-    border: 5px solid var(--color-secundario-suave);
+    border: 5px solid var(--color-secundario-fuerte);
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    border-radius: 0px 0 0 50px;    
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
