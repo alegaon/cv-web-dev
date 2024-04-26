@@ -1,0 +1,18 @@
+/* cabecera */
+.titulo-pricipal {
+    background: var(--color-secundario-suave);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center ;
+    align-items: center;
+}
+
+.contacto {
+    /* background: var(--color-secundario-suave); */
+    border: 5px solid var(--color-secundario-suave);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
