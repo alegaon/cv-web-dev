@@ -1,0 +1,74 @@
+:root {
+    --color-primario-red: #ff0000;
+    --color-primario-amarillo: #ffff00;
+    --color-primario-azul: #0000ff;
+
+    --color-secundario-magenta: #ff00ff;
+    --color-secundario-cian: #00ffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: black;
+}
+
+.luces {
+    background: #222222;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap:20px;
+
+}
+
+
+
+.luz {
+    margin: 0 auto;
+
+    background: #fff;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    
+    /* filter: blur(5px); */
+    /* filter: contrast(200%); */
+    /* filter: drop-shadow(8px 8px 10px gray); */
+    filter: blur(5px) brightness(1.5) contrast(120%) drop-shadow(8px 8px 10px gray);    
+}
+
+.items-1{
+    background: var(--color-primario-red);
+    /* filter: brightness(200%); */
+}
+.items-2{
+    background: var(--color-primario-amarillo);
+}
+.items-3{
+    background: var(--color-primario-azul);
+}
+.items-5{
+    background: #ffffff;
+}
+.items-4{
+    background: var(--color-secundario-magenta);
+}
+.items-6{
+    background-color: var(--color-secundario-cian);
+
+    
+}
