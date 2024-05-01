@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --width-hoja-a4:2480px;
+    --height-hoja-a4:3508px;
+    --color-principal: #FFC94A;
+    --color-secundario:#C08B5C;
+    --color-secundario-suave:#795458;
+    --color-secundario-fuerte:#453F78;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* styles css */
+    .main {
+        padding: 0;
+
+        max-width: 400px;
+        height: 70%;
+
+        background-color: rgba(0,0,0, 0.4);
+        color: #fff;
+
+        border: 1px solid;
+        border-radius: 80px 0 0 0;
+        box-shadow: 5px 10px 250px #888888;
+        opacity: .66;
+
+        /* display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; */
+
+        display: grid;
+        grid-row: 1fr 1fr;
+        grid-template-columns: 1fr ;
+    }
+
+    .contenedor {
+        margin: 0;
+
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,  -50%);
+
+
+
+    }
+    /* fin styles css */
+
+    /* components css */
+    /* cabecera */
+    .titulo-pricipal {
+        background: var(--color-secundario-fuerte);
+
+        width: 350px;
+
+        margin: 20px 20px 0 20px;
+
+        position: relative;
+        text-align: center;
+        border-radius: 60px 0 0;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around ;
+        align-items: center;
+
+        font-size: 1.6rem;
+
+    }
+
+    .titulo-pricipal p {
+        font-size: 1.3rem;
+    }
+
+    .titulo-pricipal:hover {
+        opacity: 1.0;
+        cursor: pointer;
+    }
+
+    .contacto {
+        /* background: var(--color-secundario-suave); */
+        margin: 0 20px 20px 20px;
+        padding: 20px 0;
+
+        width: 350px;
+        
+        border: 5px solid var(--color-secundario-fuerte);
+        border-radius: 0px 0 0 50px;  
+        text-align: center;  
+
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    /* fin components css */
+
+    /* articulos */
+    .info {
+        display: none;
+    }
+
+    /* fin articulos */
+
+    /* background css */
+    body {
+        /* background-image: linear-gradient(red, yellow, blue); */
+        background: url("../img/patrick-fore-0gkw_9fy0eQ-unsplash.jpg");
+        /* background-size: cover; */
+        /* opacity: .5; */
+        /* width: 100%; */
+       /* Add the blur effect */
+    
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    
+    }
+    
+    .bg-opacity {
+        width: 100%;
+        height: 100vh;
+        
+        background: black;
+        opacity: .9;
+        background-image: linear-gradient(to right, rgba(255,0,0,0), var(--color-secundario-fuerte));
+    
+        display: flex;
+    }
+    /* fin background css */
+
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
